@@ -1,0 +1,70 @@
+html{
+    font-family: 'Nunito', sans-serif;
+}
+
+.bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+}
+
+.container{
+    position: absolute;
+    border: 1px solid black;
+    right: 10%;
+    bottom: 15%;
+    height: 60%;
+    width: 30%;
+    border-radius: 25px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+.box{
+    height: 30px;
+    width: 250px;
+    outline: none;
+    border: 1px solid black;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 10px;
+}
+
+.bName, .authName {
+    position: absolute;
+    left: 15%;
+}
+
+.bName{
+    position: absolute;
+    top: 25%;
+}
+
+.authName {
+    position: absolute;
+    top: 40%;
+}
+
+.btn {
+    position: absolute;
+    top: 60%;
+    right: 18%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: green;
+    color: white;
+    height: 40px;
+    width: 100px;
+    cursor: pointer;
+}
+
+p{
+    position: absolute;
+    right: 40%;
+    bottom: 5%;
+    font-size: large;
+    cursor: pointer;
+
+}

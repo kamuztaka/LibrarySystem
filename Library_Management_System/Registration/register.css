@@ -84,3 +84,8 @@ h1{
     top: -60px;
     left: 35%;
 }
+
+a{
+    color: green;
+    text-decoration: none;
+}

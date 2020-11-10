@@ -1,0 +1,100 @@
+.bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+}
+
+.container{
+    position: absolute;
+    border: 1px solid black;
+    right: 10%;
+    bottom: 15%;
+    height: 60%;
+    width: 30%;
+    border-radius: 25px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+.box{
+    height: 20%;
+    width: 40%;
+    border: 1px solid green;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.addBooks, .bookIssue{
+    position: absolute;
+    left: 5%;
+}
+
+.addBooks{
+    top: 15%;
+}
+
+.bookIssue{
+    top: 40%;
+}
+
+.bookReq, .changePass{
+    position: absolute;
+    right: 5%;
+}
+
+.bookReq{
+    top: 15%;
+}
+
+.changePass {
+    top: 40%;
+}
+
+.logout{
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+}
+
+
+.addBooks:before{
+    content: "Add Books";
+    line-height: 65px;
+    color: green;
+}
+
+
+.bookReq:before{
+    content: "Book Request";
+    line-height: 65px;
+    color: green;
+}
+
+
+.bookIssue:before{
+    content: "Book Issues";
+    line-height: 65px;
+    color: green;
+}
+
+
+.changePass:before{
+    content: "Change Password";
+    line-height: 65px;
+    color: green;
+}
+
+
+.logout:before{
+    content: "Logout";
+    line-height: 65px;
+    color: green;
+}
+
+h1{
+    font-family: 'Nunito', sans-serif;
+    position: absolute;
+    right: 16%;
+}

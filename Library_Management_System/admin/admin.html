@@ -1,0 +1,49 @@
+<?php
+    include 'connection.php';
+    session_start();
+
+    if(isset($_POST['login'])) {
+        $admin = $_POST['admin_user'];
+        $pass = $_POST['password'];
+
+        $sql = "SELECT count(*) as total FROM `admin` WHERE username = '$admin' AND password = '$pass'";
+        $result = $con->query($sql);
+        
+        if($result->num_rows > 0) {
+            $_SESSION['admin_user'] = $admin;
+            header("location: adminMain.php");
+            die;
+        }else{
+            echo "Failed to Login";
+        }
+    }
+
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>Login</title>
+        <link rel="stylesheet" type="text/css" href="admin.css">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="mainpage">
+            <h1>WELCOME ADMIN</h1>
+            <img src="../admin/image/bookshelf.jpg" class="book">
+            <div class="container">
+                <img src="../admin/image/avatar.png" class="avatar">
+
+                <form method = "POST" action="">
+                    <input type="text" class="logpass email" placeholder="Username" id="email" name=admin_user>
+                    <i class="fas fa-user"></i>
+                    <input type="password" class="logpass password" placeholder="Password.." id="pass" name="password">
+                    <i class="fas fa-key"></i>
+                    <button name="login" type="submit" class="btn login">Login</button>
+                </form>
+
+            </div>
+        </div>
+    </body>
+</html>
