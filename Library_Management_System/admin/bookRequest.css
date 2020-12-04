@@ -1,0 +1,88 @@
+html
+{
+    font-family: 'Nunito', sans-serif;
+}
+
+.bg
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+}
+
+.container
+{
+    position: absolute;
+    border: 1px solid black;
+    right: 10%;
+    bottom: 15%;
+    height: 60%;
+    width: 30%;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    overflow-y: auto;
+}
+
+p
+{
+    font-family: 'Nunito', sans-serif;
+}
+
+h1
+{
+    position: absolute;
+    right: 8%;
+}
+
+.txt
+{
+    position: absolute;
+    top: 5%;
+}
+
+.bname
+{
+    position: absolute;
+    left: 10%;
+}
+
+.auth
+{
+    position: absolute;
+    right: 20%;
+}
+
+.back
+{
+    position: absolute;
+    right: 20%;
+    bottom: 5%;
+    height: 40px;
+    width: 120px;
+    border: 1px solid green;
+    background: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.back::before
+{
+    content: "Go Back";
+    color: green;
+}
+
+tr,td
+{
+    border: 1px solid black;
+    height: 40px;
+}
+
+table
+{
+    width: 100%;
+    border-collapse: collapse;
+ 
+}
