@@ -60,11 +60,23 @@ html{
     cursor: pointer;
 }
 
-p{
+.bck{
     position: absolute;
-    right: 40%;
-    bottom: 5%;
+    left: 15%;
+    bottom: 28%;
     font-size: large;
     cursor: pointer;
+    height: 40px;
+    width: 100px;
+    border: 1px solid green;
+    border-radius: 10px;
+    cursor: pointer;
+}
 
+.bck::before
+{
+    content: "Back";
+    color: green;
+    font-size: large;
+    line-height: 40px;
 }

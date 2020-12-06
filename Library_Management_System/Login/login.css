@@ -114,3 +114,19 @@ h1{
     right: 10%;
     font-family: 'Nunito', sans-serif;
 }
+
+.admin
+{
+    font-family: 'Nunito', sans-serif;
+    font-style: italic;
+    color: gray;
+    font-size: small;
+    position: absolute;
+    left: 38%;
+    bottom: 5%;
+}
+
+.admin:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}

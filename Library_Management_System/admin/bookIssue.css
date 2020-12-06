@@ -1,0 +1,62 @@
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+.bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+}
+
+.container{
+    position: absolute;
+    border: 1px solid black;
+    right: 5%;
+    bottom: 15%;
+    height: 60%;
+    width: 40%;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    overflow-y: auto;
+}
+
+h1
+{
+    position: absolute;
+    right: 10%;
+}
+
+tr,td
+{
+    border: 1px solid black;
+    height: 40px;
+    width: 100px;
+}
+
+table
+{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.btn
+{
+    position: absolute;
+    bottom: 6%;
+    right: 20%;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid green;
+    background: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn::before
+{
+    content: "Back";
+    color: green;
+}
