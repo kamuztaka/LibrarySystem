@@ -10,8 +10,8 @@
     position: absolute;
     border: 1px solid black;
     right: 10%;
-    bottom: 15%;
-    height: 60%;
+    bottom: 8%;
+    height: 70%;
     width: 30%;
     border-radius: 25px;
 }
@@ -30,24 +30,51 @@
 
 .fname{
     position: absolute;
-    top: 15%;
+    top: 26%;
 }
 
 .email{
     position: absolute;
-    top: 30%;
+    top: 39%;
 }
 
 .password{
     position: absolute;
-    top: 45%;
+    top: 52%;
 }
+
+.studentid
+{
+    position: absolute;
+    top: 13%;
+}
+
+.conPass
+{
+    position: absolute;
+    bottom: 26%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .btn{
     height: 35px;
     width: 100px;
     position: absolute;
-    bottom: 25%;
+    bottom: 13%;
     cursor: pointer;
     font-family: 'Nunito', sans-serif;
     border: none;

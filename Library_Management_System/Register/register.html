@@ -13,18 +13,22 @@
         <div class="container">
             <img src="../Register/images/avatar.png" class="avatar">
 
-            <form method="POST" action="">
+            <form method="POST" name="myForm" onsubmit="return validateform()">
 
-                <input type="text" class="txt fname" id="fullname" placeholder="Enter your Full Name.." name="fullname">
-                <input type="email" class="txt email" id="email" placeholder="Enter your Email.." name="email">
-                <input type="password" class="txt password" id="password" placeholder="Enter your Password.." name="password">
+                <input type="text" class="txt studentid" name="studentid" placeholder="Enter your Student ID">
+                <input type="text" class="txt fname" name="fullname" placeholder="Enter your Full Name">
+                <input type="email" class="txt email" name="email" placeholder="Enter your Email">
+                <input type="password" class="txt password" name="password" placeholder="Enter your Password">
+                <input type="password" class="txt conPass" name="conPass" placeholder="Confirm Password">
+                <input type="submit" class="btn reg" value="Register">
     
             </form>
             <a href="../Login/login.html">
                 <button type="submit" class="btn cancel">Cancel</button>
             </a>
 
-            <button name="submit" class="btn reg">Register</button>
         </div>
+
+        <script src="register.js"></script>
     </body>
 </html>
