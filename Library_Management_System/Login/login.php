@@ -1,3 +1,7 @@
+<?php
+    include "log.php";
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -13,7 +17,7 @@
             <div class="container">
                 <img src="avatar.png" class="avatar">
 
-                <form method="POST" action="">
+                <form method="POST" action="login.php">
                     <input type="text" class="logpass email" placeholder="Email.." name="email">
                     <i class="fas fa-user"></i>
                     <input type="password" class="logpass password" placeholder="Password.." name="password">
@@ -23,7 +27,7 @@
                         <p class="forgot">Forgot Password</p>
                     </a>
                     
-                    <button name="Submit" type="submit" class="btn login">Login</button>
+                    <button name="Submit" type="submit" class="btn login" name="login">Login</button>
                 </form>
                 <a href="../Register/register.html">
                     <button class="btn register">Register</button>

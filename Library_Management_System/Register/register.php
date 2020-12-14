@@ -1,3 +1,7 @@
+<?php
+    include 'reg.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -20,7 +24,7 @@
                 <input type="email" class="txt email" name="email" placeholder="Enter your Email">
                 <input type="password" class="txt password" name="password" placeholder="Enter your Password">
                 <input type="password" class="txt conPass" name="conPass" placeholder="Confirm Password">
-                <input type="submit" class="btn reg" value="Register">
+                <input type="submit" class="btn reg" value="Register" name="reg_user">
     
             </form>
             <a href="../Login/login.html">
