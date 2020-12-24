@@ -1,5 +1,5 @@
 <?php
-    include 'connect.php';
+    include "connect.php";
 
     if (isset($_POST['reg_user'])) {
         $studentid = $_POST['studentid']; 
@@ -7,14 +7,14 @@
         $email = $_POST['email'];
         $password = $_POST['password'];
 
-        $query = "INSERT INTO reguser (StudentID, Fullname, Email, Password)
+        $query = "INSERT INTO users (studentid, fullname, email, password)
         VALUES ('$studentid', '$fullname', '$email', '$password')";
         
         $query_run = mysqli_query($con, $query);
         $password = md5($password);
         
         if($query_run) {
-            header("location: register.php?success");
+            header("location: /LibrarySystem/Library_Management_System/Login/login.php");
         }else{
             echo("Something went wrong");
         }
